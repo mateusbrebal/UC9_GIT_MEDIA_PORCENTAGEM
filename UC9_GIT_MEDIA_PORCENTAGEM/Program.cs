@@ -33,18 +33,18 @@ for (l = 0; l <=4; l++)
     faltas = (double.Parse(alunos[l, 2]) * 100) / double.Parse(alunos[l, 1]);
     if (media >= 6 && faltas <= 25)
     {
-        Console.WriteLine("APROVADO com MÉDIA: " + media.ToString("F") + " e " + faltas.ToString("F") + "% de FALTAS");
+        Console.WriteLine(alunos[l, 0] + ": APROVADO com MÉDIA: " + media.ToString("F") + " e " + faltas.ToString("F") + "% de FALTAS");
     }
     if (media < 6 && faltas <= 25)
     {
-        Console.WriteLine("REPROVADO por MÉDIA: " + media.ToString("F"));
+        Console.WriteLine(alunos[l, 0] + ": REPROVADO por MÉDIA: " + media.ToString("F"));
     }
     if (media >= 6 && faltas > 25)
     {
-        Console.WriteLine("REPROVADO por FALTAS: " + faltas.ToString("F"));
+        Console.WriteLine(alunos[l, 0] + ": REPROVADO por FALTAS: " + faltas.ToString("F") + "% de FALTAS");
     }
     if (media < 6 && faltas > 25)
     {
-        Console.WriteLine("REPROVADO com MÉDIA: " + media.ToString("F") + " e " + faltas.ToString("F") + "% de FALTAS");
+        Console.WriteLine(alunos[l, 0] + ": REPROVADO com MÉDIA: " + media.ToString("F") + " e " + faltas.ToString("F") + "% de FALTAS");
     }
 }
